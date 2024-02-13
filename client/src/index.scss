@@ -1,0 +1,95 @@
+@import '@assets/styles';
+
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url(./assets/fonts/DelaGothicOne-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Black.ttf) format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-ExtraBold.ttf) format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-ExtraLight.ttf) format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Light.ttf) format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Medium.ttf) format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/fonts/Montserrat-Thin.ttf) format('truetype');
+  font-weight: 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  background-color: rgba(246, 245, 244, 1);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+:any-link {
+  text-decoration: none;
+  color: $primary-black;
+}
+
+input {
+  outline: none;
+  border: none;
+}

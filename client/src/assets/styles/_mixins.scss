@@ -1,0 +1,67 @@
+@mixin section($margin-size, $padding-size) {
+  max-width: 1220px;
+  margin: $margin-size;
+  padding: $padding-size;
+}
+
+@mixin icon-decorator($path, $width, $height, $color, $hover-color) {
+  width: $width;
+  height: $height;
+  -webkit-mask: $path no-repeat 50% 50%;
+  mask: $path no-repeat 50% 50%;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  background-color: $color;
+
+  &:hover {
+    background-color: $hover-color;
+    cursor: pointer;
+  }
+}
+
+@mixin preview-img($path, $width, $height) {
+  width: $width;
+  height: $height;
+  background-size: contain;
+  background-image: $path;
+  background-repeat: no-repeat;
+}
+
+@mixin flexbox($horizontal, $vertical, $direction) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+  flex-direction: $direction;
+}
+
+@mixin text($color, $weight, $size, $family) {
+  font: $weight $size $family;
+  color: $color;
+}
+
+@mixin text-hover($color) {
+  &:hover {
+    color: $color;
+    cursor: pointer;
+  }
+}
+
+@mixin primary-button($paddingSize, $radius, $defaultBckgColor, $borderColor) {
+  width: max-content;
+  padding: $paddingSize;
+  border-radius: $radius;
+  border-color: $borderColor;
+  text-align: center;
+  background: $defaultBckgColor;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+@mixin hover-button($hoverBckgColor, $borderColor) {
+  &:hover {
+    background: $hoverBckgColor;
+    border: 1px solid $borderColor;
+    cursor: pointer;
+  }
+}

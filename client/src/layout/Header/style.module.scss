@@ -1,0 +1,49 @@
+@import '@assets/styles';
+
+.wrapper {
+  background: #f6f5f4;
+  box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+
+  .content {
+    @include flexbox(space-between, center, row);
+    @include section(auto, 2% 0);
+
+    h1 {
+      @include text($primary-black, 400, 1em, Dela Gothic One);
+    }
+
+    .options {
+      @include flexbox(flex-start, center, row);
+      gap: 20px;
+
+      button {
+        @include text($primary-black, 700, 1em, Montserrat);
+        @include text-hover($primary-golden-yellow);
+
+        @include primary-button(14px, 4px, transparent, transparent);
+        @include hover-button(transparent, transparent);
+      }
+    }
+
+    .btns {
+      @include flexbox(flex-start, center, row);
+      gap: 20px;
+
+      .login {
+        @include text($primary-black, 700, 1em, Montserrat);
+        @include text-hover($primary-golden-yellow);
+
+        @include primary-button(14px, 4px, transparent, transparent);
+        @include hover-button(transparent, transparent);
+      }
+    }
+
+    .sign {
+      @include text($primary-cyan-dark, 700, 1em, Montserrat);
+      @include text-hover($primary-golden-yellow);
+
+      @include primary-button(14px, 4px, transparent, $primary-cyan-dark);
+      @include hover-button(transparent, $primary-golden-yellow);
+    }
+  }
+}
